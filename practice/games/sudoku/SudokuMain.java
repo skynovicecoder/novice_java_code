@@ -1,4 +1,4 @@
-package practice.sudoku;
+package practice.games.sudoku;
 
 public class SudokuMain {
     public static void main(String[] args) {

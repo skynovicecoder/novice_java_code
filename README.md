@@ -17,9 +17,6 @@ This repository contains a collection of **Java programming practice problems** 
     - Array and Matrix operations
     - Recursion and Dynamic Programming
     - Searching and Sorting
-- **Design Patterns**
-    - Singleton, Factory, Builder, Observer, etc.
 - **System Design / Mini Projects**
-    - Snake and Ladder Game
-    - OrgHierarchyAuditor
-    - Sudoku Solver
+    - practice/Snake and Ladder Game
+    - practice/Sudoku Solver

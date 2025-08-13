@@ -1,4 +1,4 @@
-package practice.sudoku;
+package practice.games.sudoku;
 
 public class SudokuBoard {
     private int[][] board;
