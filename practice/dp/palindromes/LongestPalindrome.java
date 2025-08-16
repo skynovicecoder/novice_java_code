@@ -1,4 +1,4 @@
-package practice.dp;
+package practice.dp.palindromes;
 
 public class LongestPalindrome {
     public static String longestPalindromeString(String input){
