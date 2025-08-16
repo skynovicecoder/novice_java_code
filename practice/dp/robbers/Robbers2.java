@@ -6,9 +6,10 @@ public class Robbers2 {
 
     public static int rob(int[] nums){
         if(nums.length==0) return 0;
+        if(nums.length==1) return nums[0];
         return Math.max(
-                helper(Arrays.copyOfRange(nums,1,nums.length)),
-                helper(Arrays.copyOfRange(nums, 0,nums.length-1))
+                helper(Arrays.copyOfRange(nums,0,nums.length-1)),
+                helper(Arrays.copyOfRange(nums, 1,nums.length))
         );
     }
 
