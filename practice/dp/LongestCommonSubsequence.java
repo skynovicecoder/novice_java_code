@@ -1,9 +1,9 @@
-package practice.dp.robbers;
+package practice.dp;
 
 public class LongestCommonSubsequence {
     public static int findLCS(String s1, String s2){
         /*
-        This is does not work for when order is rearranged
+        This does not work for when order is rearranged
         int count=0;
         for(int i =0; i<s1.length(); i++){
             int temp=0;
