@@ -1,11 +1,15 @@
 package practice.spiralMatrix;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class SpriralMatrix {
-    public static List<Integer> spriralMAtrix(int[][] inputMatrix){
+public class SpiralMatrix {
+    public static List<Integer> spiralMatrix(int[][] inputMatrix){
+        System.out.println("\nInput Matrix: "+Arrays.deepToString(inputMatrix));
+
         if(inputMatrix == null || inputMatrix.length==0 ) return new ArrayList<>();
+
         List<Integer> output = new ArrayList<>();
         int left=0, right=inputMatrix[0].length;
         int top=0, bottom=inputMatrix.length;
@@ -45,16 +49,16 @@ public class SpriralMatrix {
                 {4,5,6},
                 {7,8,9}
         };
-        System.out.println(spriralMAtrix(inputArray));
+        System.out.println(spiralMatrix(inputArray));
 
         int[][] inputArray1 = new int[][]{
                 {1,2,3,4},
                 {5,6,7,8},
                 {9,10,11,12}
         };
-        System.out.println(spriralMAtrix(inputArray1));
+        System.out.println(spiralMatrix(inputArray1));
 
         int[][] inputArray2 = new int[][]{};
-        System.out.println(spriralMAtrix(inputArray2));
+        System.out.println(spiralMatrix(inputArray2));
     }
 }
