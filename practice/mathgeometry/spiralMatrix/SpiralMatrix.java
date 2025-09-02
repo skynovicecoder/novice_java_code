@@ -1,4 +1,4 @@
-package practice.spiralMatrix;
+package practice.mathgeometry.spiralMatrix;
 
 import java.util.ArrayList;
 import java.util.Arrays;
