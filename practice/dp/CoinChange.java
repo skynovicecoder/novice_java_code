@@ -37,11 +37,11 @@ public class CoinChange {
     public static void main(String[] args) {
         int[] coinsArray = {1, 5, 10};
         int amount = 12;
-        System.out.println(findMinCoinsReq(coinsArray, amount));
+        //System.out.println(findMinCoinsReq(coinsArray, amount));
 
         int[] coinsArray2 = {2};
         int amount1 = 3;
-        System.out.println(findMinCoinsReq(coinsArray2, amount1));
+        //System.out.println(findMinCoinsReq(coinsArray2, amount1));
 
         int[] coinsArray3 = {1,3,4,5};
         int amount3 = 7;
