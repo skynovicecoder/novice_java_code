@@ -5,7 +5,7 @@ import java.util.*;
 public class ReverseList {
 public static void main(String[] args) {
 List<Integer> input = new ArrayList<>(Arrays.asList(23,10,8,3,12));
-System.out.println(input);
+System.out.println("Input : "+input);
 
 //Collections.reverse(input);
 //System.out.println(input);
@@ -33,7 +33,7 @@ System.out.println(input);
         input.set(i, input.get(j));
         input.set(j,temp);
     }
-    System.out.println(input);
+    System.out.println("Output:: "+input);
 
 }
 
