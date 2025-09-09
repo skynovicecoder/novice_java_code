@@ -15,7 +15,7 @@ public class ReverseBits {
         String reversedBinary = builder.reverse().toString();
         for (int i = 0; i < 32; i++) {
             if (reversedBinary.charAt(i) == '1') {
-                res = res | (1 << i);
+                res = (1 << i) | res;
             }
         }
         return res;
