@@ -1,4 +1,4 @@
-package practice;
+package practice.java;
 
 public final class ImmutableClass {
     private final String name;
