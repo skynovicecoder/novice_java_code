@@ -1,4 +1,4 @@
-package practice.pcthreads;
+package practice.java.pcthreads;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
