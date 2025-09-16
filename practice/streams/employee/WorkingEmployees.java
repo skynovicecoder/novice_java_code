@@ -3,6 +3,7 @@ package practice.streams.employee;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 record CompanyEmployee(String name, int salary, String dept, String location) {
 }
@@ -45,6 +46,20 @@ public class WorkingEmployees {
                 .forEach(System.out::println);
     }
 
+    public static List<String> getEmployeeFirstNames(List<CompanyEmployee> empList) {
+        String names = empList.stream()
+                .map(empObj -> empObj.name())
+                .collect(Collectors.joining(","));
+        System.out.println("Names: " + names);
+
+        List<String> nameList = empList.stream()
+                .map(empObj -> empObj.name())
+                //.collect(Collectors.joining(","))
+                .collect(Collectors.toList());
+
+        return nameList;
+    }
+
     public static void main(String[] args) {
         List<CompanyEmployee> employeeList = List.of(
                 new CompanyEmployee("Sonil", 7500000, "IT", "Hyderabad"),
@@ -59,5 +74,7 @@ public class WorkingEmployees {
         System.out.println(secondHighestSalaryEmp(employeeList).isPresent() ? secondHighestSalaryEmp(employeeList).get() : "None");
 
         empSortedBySalary(employeeList);
+
+        System.out.println(getEmployeeFirstNames(employeeList));
     }
 }
