@@ -78,6 +78,7 @@ public class PlayAroundList {
 
         Optional<Double> maxWallet = consumerList.stream()
                 .map(ConsumerInfo::getConsumerWallet)
+                //.max((d1,d2)->Double.compare(d1,d2))
                 .max(Double::compare);
         maxWallet.ifPresent(System.out::println);
 
