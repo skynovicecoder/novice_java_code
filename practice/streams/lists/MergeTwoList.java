@@ -1,5 +1,6 @@
 package practice.streams.lists;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -7,7 +8,9 @@ public class MergeTwoList {
     public static List<Integer> mergeTwoList(List<Integer> list1, List<Integer> list2){
         List<Integer> output = Stream.concat(list1.stream(), list2.stream())
                 .sorted((a,b)->a-b) //ascending order
+                //.sorted(Comparator.naturalOrder())
                 //.sorted((a,b)->b-a)  //descending order
+                //.sorted(Comparator.reverseOrder())
                 .toList();
         return output;
     }
