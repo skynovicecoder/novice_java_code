@@ -1,6 +1,7 @@
 package practice.slidingwindows;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class LongestRepeatingCharacters {
 
@@ -8,12 +9,11 @@ public class LongestRepeatingCharacters {
         HashMap<Character, Integer> alphabetMap = new HashMap<>();
         int res = 0;
 
-        int l = 0, maxFrequency = 0;
-        //int l = 0;
+        int l = 0;
         for (int r = 0; r < input.length(); r++) {
             alphabetMap.put(input.charAt(r), alphabetMap.getOrDefault(input.charAt(r), 0) + 1);
-            maxFrequency = Math.max(maxFrequency, alphabetMap.get(input.charAt(r)));
-            //int maxFrequency  = maxCount(count);
+
+            int maxFrequency = maxCount(alphabetMap);
 
             while ((r - l + 1) - maxFrequency > allowedReplacements) {
                 alphabetMap.put(input.charAt(l), alphabetMap.get(input.charAt(l)) - 1);
@@ -25,12 +25,12 @@ public class LongestRepeatingCharacters {
         return res;
     }
 
-    /*public static int maxCount(Map<Character, Integer> map) {
+    public static int maxCount(Map<Character, Integer> map) {
         return map.entrySet().stream()
                 .max(Map.Entry.comparingByValue())
                 .map(Map.Entry::getValue)
                 .orElseGet(() -> 0);
-    }*/
+    }
 
     public static void main(String[] args) {
         String input = "XYYX";
