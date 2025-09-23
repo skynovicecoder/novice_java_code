@@ -24,10 +24,10 @@ public class LongestSubstringWithoutRepeating {
 
     public static void main(String[] args) {
         String input = "zxyzxyz";
-        //System.out.println(longestSubstringWithoutRepeating(input));
+        System.out.println(longestSubstringWithoutRepeating(input));
 
         String input1 = "xxxx";
-        //System.out.println(longestSubstringWithoutRepeating(input1));
+        System.out.println(longestSubstringWithoutRepeating(input1));
 
         String input2 = "abcabcbb";
         System.out.println(longestSubstringWithoutRepeating(input2));
