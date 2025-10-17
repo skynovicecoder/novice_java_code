@@ -1,4 +1,4 @@
-package practice.dp;
+package practice.dp.coins;
 
 import java.util.Arrays;
 
